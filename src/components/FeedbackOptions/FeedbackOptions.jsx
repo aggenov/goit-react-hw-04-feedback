@@ -1,4 +1,3 @@
-import React from "react";
 import {List, Button} from "./FeedbackOptions.styled";
 
 export const FeedbackOptions = ({options, onLeaveFeedback}) => {
