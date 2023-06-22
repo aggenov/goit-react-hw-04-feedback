@@ -11,8 +11,6 @@ export const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
- 
-  const options = Object.keys({ good, neutral, bad })
 
   const total = good + neutral + bad;
 
@@ -39,14 +37,13 @@ export const App = () => {
       }
     }
   
+  const options = Object.keys({ good, neutral, bad })
+
     return (
       <>
         <Section title ="Please liave feedback" >
           <FeedbackOptions
-            // options={options}
-            good='good'
-            neutral='neutral'
-            bad='bad'
+            options={options}
             onLeaveFeedback = {handleChangeCount }
           />
         </Section>
@@ -65,7 +62,6 @@ export const App = () => {
           }
         </Section>
       </>
-    )
-  
+  )
 }
 
