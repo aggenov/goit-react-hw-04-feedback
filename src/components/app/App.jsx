@@ -13,8 +13,6 @@ export const App = () => {
   const [bad, setBad] = useState(0);
  
   const options = Object.keys({ good, neutral, bad })
-                        .map(option => option.charAt(0)
-                        .toUpperCase() + option.slice(1));
 
   const total = good + neutral + bad;
 
@@ -45,7 +43,10 @@ export const App = () => {
       <>
         <Section title ="Please liave feedback" >
           <FeedbackOptions
-            options = {options}
+            // options={options}
+            good='good'
+            neutral='neutral'
+            bad='bad'
             onLeaveFeedback = {handleChangeCount }
           />
         </Section>

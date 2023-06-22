@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 
-export const List = styled.ul`
+export const List = styled.div`
 list-style: none;
 display: flex;
 ustify-content: space-between;
@@ -16,6 +16,7 @@ font-size: 14px;
 border: 1px solid gray;
 border-radius: 5px;
 box-shadow: 1px 1px 5px  1px rgba(0, 0, 0, 0.2);
+text-transform: capitalize;
 
 &: hover,
 &: focus {

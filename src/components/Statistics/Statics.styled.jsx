@@ -19,6 +19,7 @@ import styled from "@emotion/styled";
 const Text = styled.p`
 margin: 0;
 padding: 0;
+// text-transform: capitalize;
 
 // letter-spacing: 0.01em;
 // word-spacing: 10px;
